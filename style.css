@@ -1,0 +1,131 @@
+*{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 150%;
+    overflow-y: hidden;
+}
+
+
+body{
+    height: 100vh;
+    background: linear-gradient(45deg, gray, #D8DFE8 2%, #0e0303);
+    background-size: 400% 400%;
+    animation: gradient 17s ease-in infinite;    
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.logo{
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 8%;
+}
+
+
+main{
+    display: flex;
+    margin-bottom: 10px ;
+    margin-left: 180px;
+}
+
+
+.text-area{   
+    height: 310px;
+    background: #F3F5FC;
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    margin-top: 30px;
+    padding: 6px;
+    text-transform: lowercase;
+}
+
+
+::placeholder{color: #0A3871; }
+    .text-area:focus{
+        outline: none;
+    }
+
+
+.mensaje{
+    height: 525px;
+    background-color: #F3F5FC; 
+    animation: gradient 12s ease-in infinite;   
+    background-image: url("Imagenes/Muñeco.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    margin-left: 105px;
+    margin-top: 30px;
+    padding-left: 20px;
+    position: fixed;
+}
+
+
+.mensaje:focus{
+    outline: none;
+}
+
+
+.botones{
+    display: flex;
+    margin-top: 15px;
+}
+
+
+.btn-desencriptar{
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+
+
+.btn-encriptar{
+    background-color : #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+
+.copiar{
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 110px;
+    margin-top: 485px;
+    position: fixed;
+    width: 300px; 
+}
+
+
+.informacion{
+    color: black;
+    font-size: 18px;
+}
